@@ -19,7 +19,7 @@ Follow these steps to set up the project on your local machine.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/notes-app-task.git
+git clone https://github.com/naveenchinnadurai/notes-app-task.git
 ```
 ### 2. Navigate to the Project Folder and Install Dependencies
 

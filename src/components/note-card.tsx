@@ -25,7 +25,7 @@ export const NoteCard = ({ note, onEdit }: NoteCardProps) => {
         </button>
         <button
           onClick={() => deleteNote(note.id)}
-          className="text-gray-400 hover:text-red-500 hover:bg-red-400/70 px-2 py-1.5 rounded-md transition"
+          className="text-gray-400 hover:text-red-500 hover:bg-red-300/70 px-2 py-1.5 rounded-md transition"
           title="Delete"
         >
           <Trash2 size={18} />

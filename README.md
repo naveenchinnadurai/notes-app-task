@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Notes App
 
-## Getting Started
+A simple and clean Notes Application built with **Next.js** and **TypeScript**.  
+State is managed using the **useContext** hook.
 
-First, run the development server:
+## ✨ Features
+
+- User authentication (register, login, logout)
+- Create, edit, and delete notes
+- Global state management using `useContext`
+- Clean UI and responsive design
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project on your local machine.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/notes-app-task.git
+```
+### 2. Navigate to the Project Folder and Install Dependencies
+
+```bash
+cd notes-app-task
+npm install
+```
+### 3. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will now be running at:
+🔗 http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 📁 Folder Structure 
+<pre lang="md">  
+notes-app-task/
+├── public/                   # Static files (images, icons, etc.)
+├──src/
+│   ├── app/                      # Application entry (Next.js app directory)
+│   │   ├── (pages)/              # Page components (routes)
+│   │   │   ├── signin.tsx        # Login screen
+│   │   │   └── signup.tsx        # Registration screen
+│   │   ├── layout.tsx            # Root layout wrapper for all pages
+│   │   ├── page.tsx              # Default root page (optional)
+│   │   ├── global.css            # Global styles and TailwindCSS imports
+│   │   └── favicon.ico           # App favicon
+│   ├── components/               # Reusable UI components (Toast, Dialog, Modal, etc.)
+│   ├── context/                  # App-wide state management using useContext
+│   ├── lib/                      # TypeScript types and utility functions
+├── .gitignore                # Git ignored files and folders
+├── package.json              # Project metadata and npm scripts
+├── tsconfig.json             # TypeScript configuration
+└── README.md                 # Project documentation
+</pre>
